@@ -1,7 +1,6 @@
 {
-  "name": "soveltava-harjoitustyo-cpeny003-xamk",
+  "name": "lopputyoso3",
   "version": "0.1.0",
-  "homepage": "https://github.com/xamk-so3/soveltava-harjoitustyo-cpeny003-xamk",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",

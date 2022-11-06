@@ -7,7 +7,6 @@ interface TypeProps {
 
 export const PokeType : React.FC<TypeProps> = (props : TypeProps) : React.ReactElement<TypeProps> => {
     
-    const wrapperRef = useRef<HTMLDivElement>(null);
     const [pokeTyyppi, setPokeTyyppi] = useState<any>();
     const haeTyyppiData = async () : Promise<any> => {
 
@@ -23,7 +22,7 @@ export const PokeType : React.FC<TypeProps> = (props : TypeProps) : React.ReactE
   return (
 <>
     <CardMedia component="img" src={pokeTyyppi?.sprites.other['official-artwork'].front_default} alt="ei kuvaa" sx={{width:"100%"}}/>
-    <Box ref={wrapperRef} sx={{display:'flex', alignItems:"center"}}>
+    <Box sx={{display:'flex', alignItems:"center"}}>
         {
         pokeTyyppi?.types?.map((tyyppi : any, idx : number) => {
             return (
