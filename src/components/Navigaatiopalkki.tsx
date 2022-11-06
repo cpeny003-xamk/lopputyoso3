@@ -63,7 +63,7 @@ export const Navigaatiopalkki : React.FC = () : React.ReactElement => {
         <Toolbar>
           <Box 
           component={"img"}
-          src={`/images/logo.png`}
+          src={`https://cpeny003-xamk.github.io/lopputyoso3/images/logo.png`}
           sx={{width:"10%", padding:"10px", margin:"auto"}}
           />
           <Search>

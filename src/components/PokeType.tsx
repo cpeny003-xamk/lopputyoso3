@@ -27,7 +27,7 @@ export const PokeType : React.FC<TypeProps> = (props : TypeProps) : React.ReactE
         pokeTyyppi?.types?.map((tyyppi : any, idx : number) => {
             return (
             <>
-            <CardMedia key={idx} component="img" style={{width:"50%"}} src={`/images/${tyyppi.type.name}.png`} alt="ei kuvaa"/>
+            <CardMedia key={idx} component="img" style={{width:"50%"}} src={`https://cpeny003-xamk.github.io/lopputyoso3/images/${tyyppi.type.name}.png`} alt="ei kuvaa"/>
             </>
             )
         })
