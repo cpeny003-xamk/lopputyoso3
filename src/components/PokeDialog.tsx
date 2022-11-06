@@ -1,5 +1,6 @@
-import { Box, CardMedia, Dialog, DialogContent, Link, List, ListItem, ListItemText, Typography } from '@mui/material';
+import { Box, CardMedia, Dialog, DialogContent, List, ListItem, ListItemText, Typography } from '@mui/material';
 import React, { Dispatch, SetStateAction, useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 interface DialogProps {
     setOpenDialog : Dispatch<SetStateAction<boolean>>
@@ -40,7 +41,7 @@ export const PokeDialog : React.FC<DialogProps> = (props : DialogProps) : React.
                 })
                 }
                 <br/>
-                <Link href={`/${(props.index! >= 905) ? props.index! + 9096 : props.index! + 1}`} variant="h5" sx={{fontWeight:"bold"}}>Full details</Link>
+                <Typography><Link to={`/${(props.index! >= 905) ? props.index! + 9096 : props.index! + 1}`} style={{fontWeight:"bold"}}>Full details</Link></Typography>
                 </Box>  
                 <List sx={{border:"1px solid black", borderRadius:"10px", backgroundColor:"lightgoldenrodyellow", boxShadow: 5, marginTop:"5px"}}>
                 {
