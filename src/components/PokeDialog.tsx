@@ -35,7 +35,7 @@ export const PokeDialog : React.FC<DialogProps> = (props : DialogProps) : React.
                 {
                 pokeTyyppi?.types?.map((tyyppi : any, idx : number) => {
                     return (
-                    <CardMedia key={idx} component="img" style={{width:"25%", margin:"auto", display:"inline"}} src={`/images/${tyyppi.type.name}.png`} alt="ei kuvaa"/>
+                    <CardMedia key={idx} component="img" style={{width:"25%", margin:"auto", display:"inline"}} src={`https://cpeny003-xamk.github.io/lopputyoso3/images/${tyyppi.type.name}.png`} alt="ei kuvaa"/>
                     )
                 })
                 }

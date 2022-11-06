@@ -27,7 +27,7 @@ export const PokeFull : React.FC = () : React.ReactElement => {
         {
         pokeFull?.types?.map((Full : any, idx : number) => {
             return (
-            <CardMedia key={idx} component="img" style={{width:"25%", margin:"auto", display:"inline"}} src={`/images/${Full.type.name}.png`} alt="ei kuvaa"/>
+            <CardMedia key={idx} component="img" style={{width:"25%", margin:"auto", display:"inline"}} src={`https://cpeny003-xamk.github.io/lopputyoso3/images/${Full.type.name}.png`} alt="ei kuvaa"/>
             )
         })
         }

@@ -1,6 +1,6 @@
-import { List, ListItem, ListItemText, Container, Typography, Link, Button } from '@mui/material'
+import { List, ListItem, ListItemText, Container, Typography, Button } from '@mui/material'
 import React from 'react'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate, Link } from 'react-router-dom'
 import { SearchSpriteImg } from './SearchSpriteImg'
 
 export const SearchResults : React.FC = () : React.ReactElement => {
@@ -18,7 +18,7 @@ export const SearchResults : React.FC = () : React.ReactElement => {
         <ListItem key={idx}>
             <ListItemText>
             <SearchSpriteImg idx={idx} location={location}/>
-            <Link href={`http://localhost:3000/${result.url.substr(34)}`} variant="h6" sx={{fontWeight:"bold", textTransform:"capitalize"}}>{result.name}</Link>
+            <Link to={`/${result.url.substr(34)}`} style={{textTransform:"capitalize"}}>{result.name}</Link>
             </ListItemText>
         </ListItem>
             )
